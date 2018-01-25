@@ -1,0 +1,21 @@
+
+= content_for :title, "#{@event.partner_one} & #{@event.partner_two} Wedding - #{@event.formatted_time}"
+.main-pic
+  #location{ :style => "background-image: url('#{@primary_venue_photo}'); " }
+
+.row
+  .column.small-12
+    %h6{style: "padding-bottom: 70px"}
+      = @event.partner_one
+      &
+      = @event.partner_two
+    #couple{style: "background-repeat: no-repeat; height: 90%"}
+
+.box.box--mint
+  .row
+    .column.small-12
+      %h5 We Are Getting Married On
+      %h3= @event.formatted_time
+
+
+ 
